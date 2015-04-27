@@ -3,7 +3,7 @@
 <ul id="apartments">
   <% @apartments.each do |apartment| %>
     <li>
-      <%= apartment.name %>
+      <%= link_to apartment.name, apartment_path(apartment) %>
     </li>
     <li>
       <%= apartment.location %>
@@ -11,5 +11,9 @@
     <li>
       <%= apartment.noofrooms %>
     </li>
+    <li>
+      <%= apartment.houseno %>
+    </li>
   <% end %>
 </ul>
+<%= link_to "Add a New Apartment", new_apartment_path, class: "new_apartment" %>
