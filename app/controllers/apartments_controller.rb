@@ -1,4 +1,5 @@
 class ApartmentsController < ApplicationController
+<<<<<<< HEAD
   before_action :set_apartment, only: [:show, :edit, :update, :destroy]
 
   # GET /apartments
@@ -71,4 +72,9 @@ class ApartmentsController < ApplicationController
     def apartment_params
       params.require(:apartment).permit(:name, :location, :status, :rent, :bedrooms)
     end
+=======
+	def index
+  @apartments = Apartment.all
+end
+>>>>>>> 5f76f3777e7141640b420cf75df063263ec85ed4
 end

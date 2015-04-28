@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class ApartmentsControllerTest < ActionController::TestCase
+<<<<<<< HEAD
   setup do
     @apartment = apartments(:one)
   end
@@ -46,4 +47,9 @@ class ApartmentsControllerTest < ActionController::TestCase
 
     assert_redirected_to apartments_path
   end
+=======
+  # test "the truth" do
+  #   assert true
+  # end
+>>>>>>> 5f76f3777e7141640b420cf75df063263ec85ed4
 end

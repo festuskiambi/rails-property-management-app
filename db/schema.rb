@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150428094307) do
 
   create_table "houses", force: :cascade do |t|
@@ -21,6 +22,23 @@ ActiveRecord::Schema.define(version: 20150428094307) do
     t.string   "bedrooms"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+=======
+ActiveRecord::Schema.define(version: 20150427073012) do
+
+  create_table "apartments", force: :cascade do |t|
+    t.string   "name"
+    t.string   "location"
+    t.string   "noofrooms"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "houseno"
+  end
+
+  create_table "bedsitters", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "houseno"
+>>>>>>> 5f76f3777e7141640b420cf75df063263ec85ed4
   end
 
 end

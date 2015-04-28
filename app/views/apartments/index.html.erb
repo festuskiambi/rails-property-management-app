@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Apartments</h1>
@@ -33,3 +34,24 @@
 <br>
 
 <%= link_to 'New Apartment', new_apartment_path %>
+=======
+<h1>All Apartments</h1>
+
+<ul id="apartments">
+  <% @apartments.each do |apartment| %>
+    <li>
+      <%= link_to apartment.name, apartment_path(apartment) %>
+    </li>
+    <li>
+      <%= apartment.location %>
+    </li>
+    <li>
+      <%= apartment.noofrooms %>
+    </li>
+    <li>
+      <%= apartment.houseno %>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "Add a New Apartment", new_apartment_path, class: "new_apartment" %>
+>>>>>>> 5f76f3777e7141640b420cf75df063263ec85ed4

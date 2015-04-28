@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   resources :bedsitters
 
   resources :apartments
@@ -59,4 +60,8 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+=======
+  resources :apartments
+  resources :bedsitters
+>>>>>>> 5f76f3777e7141640b420cf75df063263ec85ed4
 end
