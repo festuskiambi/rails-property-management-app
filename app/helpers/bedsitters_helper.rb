@@ -1,0 +1,2 @@
+module BedsittersHelper
+end

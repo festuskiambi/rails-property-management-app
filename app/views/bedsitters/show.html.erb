@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bedsitter.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @bedsitter.location %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @bedsitter.status %>
+</p>
+
+<p>
+  <strong>Rent:</strong>
+  <%= @bedsitter.rent %>
+</p>
+
+<p>
+  <strong>Bedrooms:</strong>
+  <%= @bedsitter.bedrooms %>
+</p>
+
+<%= link_to 'Edit', edit_bedsitter_path(@bedsitter) %> |
+<%= link_to 'Back', bedsitters_path %>

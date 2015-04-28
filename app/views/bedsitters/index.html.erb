@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Bedsitters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Status</th>
+      <th>Rent</th>
+      <th>Bedrooms</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bedsitters.each do |bedsitter| %>
+      <tr>
+        <td><%= bedsitter.name %></td>
+        <td><%= bedsitter.location %></td>
+        <td><%= bedsitter.status %></td>
+        <td><%= bedsitter.rent %></td>
+        <td><%= bedsitter.bedrooms %></td>
+        <td><%= link_to 'Show', bedsitter %></td>
+        <td><%= link_to 'Edit', edit_bedsitter_path(bedsitter) %></td>
+        <td><%= link_to 'Destroy', bedsitter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bedsitter', new_bedsitter_path %>

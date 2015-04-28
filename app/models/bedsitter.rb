@@ -1,0 +1,2 @@
+class Bedsitter < House
+end
